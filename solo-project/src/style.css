@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #23252C;
+  color: white;
+  font-family: inter, sans-serif;
+  
+}
+
+.container {
+  position: relative;
+  padding: 5rem 5rem;
+  text-align: center;
+}
+
+.info {
+  width: 35rem;
+  background-color: #1A1B21;
+  border-radius: 10px 10px 0px 0px;
+  letter-spacing: 0.6px;
+  word-spacing: 0.2rem;
+}
+
+.info--image {
+  width: 34.5rem;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 5px;
+}
+
+.info--name {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+.info--jobposition {
+  margin-top: 0px;
+  color: #F3BF99;
+}
+
+.info--website {
+  font-weight: normal;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.info--button--group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info--button--group > button {
+  width: 13rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.button--email {
+  color: #374151;
+}
+
+.button--email > img {
+  width: 20px;
+  filter: invert(23%) sepia(25%) saturate(496%) hue-rotate(178deg) brightness(94%) contrast(91%);
+}
+
+.button--linkedin {
+  background-color: #5093E2;
+  color: #fff;
+  
+}
+
+.button--linkedin > img {
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(102%);
+}
+
+.about {
+  width: 35rem;
+  background-color: #1A1B21;
+  justify-content: center;
+  padding-bottom: 1.rem;
+}
+
+.about > h2 {
+  padding: 0px 3.6rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.about > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px 3.6rem;
+  text-align: justify;
+}
+
+.interest {
+  width: 35rem;
+  background-color: #1A1B21;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.interest > h2 {
+  padding: 0px 3.6rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.interest > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px 3.6rem;
+  text-align: justify;
+}
+
+.footer {
+  width: 35rem;
+  background-color: #161619;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0 0 10px 10px;
+  padding: 2rem 0px;
+}
+
+.footer--icon {
+  width: 50px;
+  filter: invert(62%) sepia(5%) saturate(559%) hue-rotate(213deg) brightness(92%) contrast(84%);
+}
