@@ -69,7 +69,6 @@ section{
 .card--collection {
   display: flex;
   flex-direction: row;
-  gap: 1.3rem;
 }
 
 .card {

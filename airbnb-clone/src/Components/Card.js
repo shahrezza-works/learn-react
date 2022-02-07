@@ -1,19 +1,25 @@
 import React from 'react';
-import imagecard from "../images/card1.png"
+// import imagecard from ""
 import staricon from "../images/star.png"
 
 export default function Card(props) {
+    const img = props.img
+    const rating = props.rating
+    const reviewCount = props.reviewCount
+    const country = props.country
+    const title = props.title
+    const price = props.price
     return (
-        <section className='card--collection'>
+        <section>
             <div className='card'>
-                <img src={imagecard} alt="card1"/>
+                <img src={require(`../images/${img}`)} alt="card1"/>
                 <div className='card--info'>
                     <div className='card--info--one'>
                         <img src={staricon} alt="star" />
-                        <p>5.0 <span className='grey'>(6) <span className='round'></span> USA</span></p>
+                        <p>{rating} <span className='grey'>({reviewCount}) <span className='round'></span> {country}</span></p>
                     </div>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><span className='bold'>From $136</span> / person</p>
+                    <p>{title}</p>
+                    <p><span className='bold'>From ${price}</span> / person</p>
                 </div>
             </div>
         </section>
