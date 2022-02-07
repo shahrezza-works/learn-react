@@ -3,16 +3,18 @@ import React from 'react';
 import staricon from "../images/star.png"
 
 export default function Card(props) {
-    const img = props.img
-    const rating = props.rating
-    const reviewCount = props.reviewCount
-    const country = props.country
-    const title = props.title
-    const price = props.price
+    
+    const data = props.item
+    const img = data.coverImg
+    const rating = data.rating
+    const reviewCount = data.reviewCount
+    const country = data.location
+    const title = data.title
+    const price = data.price
     let badgeText 
-    if(props.openSpots === 0){
+    if(data.openSpots === 0){
         badgeText = "SOLD OUT"
-    }else if (props.country === "Online"){
+    }else if (data.location === "Online"){
         badgeText = "ONLINE"
     }
 

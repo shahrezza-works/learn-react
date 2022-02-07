@@ -8,13 +8,7 @@ function App() {
 
   const cardElement = datacard.map(data => {
     return <Card key={data.id}
-      img={data.coverImg}
-      rating={data.stats.rating}
-      reviewCount={data.stats.reviewCount}
-      country={data.location}
-      title={data.title}
-      price={data.price}
-      openSpots={data.openSpots}
+      item={data}
     />
   })
 
@@ -30,3 +24,14 @@ function App() {
 }
 
 export default App;
+
+// this still working but its to long
+/* <Card key={data.id}
+  img={data.coverImg}
+  rating={data.stats.rating}
+  reviewCount={data.stats.reviewCount}
+  country={data.location}
+  title={data.title}
+  price={data.price}
+  openSpots={data.openSpots}
+/> */
