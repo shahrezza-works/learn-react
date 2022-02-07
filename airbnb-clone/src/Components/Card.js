@@ -3,8 +3,8 @@ import React from 'react';
 import staricon from "../images/star.png"
 
 export default function Card(props) {
-    
-    const data = props.item
+    //spread object as props will returne each of object same as in database
+    const data = props
     const img = data.coverImg
     const rating = data.rating
     const reviewCount = data.reviewCount

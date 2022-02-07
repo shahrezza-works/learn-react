@@ -7,8 +7,9 @@ import datacard from "./data";
 function App() {
 
   const cardElement = datacard.map(data => {
-    return <Card key={data.id}
-      item={data}
+    return <Card 
+      key={data.id}
+      {...data}
     />
   })
 
@@ -24,6 +25,12 @@ function App() {
 }
 
 export default App;
+
+// this still working
+  /* <Card 
+    key={data.id}
+    item={data}
+  /> */
 
 // this still working but its to long
 /* <Card key={data.id}
