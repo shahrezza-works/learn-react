@@ -1,5 +1,6 @@
 import React from "react";
 import Joke from "./Components/Joke";
+import jokesData from "./jokesData";
 
 /*
 Challenge: Think critically - how would you pass in a prop that wasn't
@@ -11,9 +12,20 @@ of whether the joke is a pun (`isPun`).
 */
 
 function App() {
+  
+  const jokeElement = jokesData.map(joke => {
+    return <Joke key={Math.random()*1000} setup={joke.setup} punchline={joke.punchline}  />
+  })
   return (
-    <>
-    <Joke 
+    <div>
+      {jokeElement}
+    </div>
+  );
+}
+
+export default App;
+
+      /* <Joke 
         upvotes={8}
         downvotes={2}
         pun={true}
@@ -59,9 +71,4 @@ function App() {
         comments={[]}
         setup="What's the best thing about Switzerland?"
         punchline="I don't know, but the flag is a big plus!"
-      />
-    </>
-  );
-}
-
-export default App;
+      /> */
