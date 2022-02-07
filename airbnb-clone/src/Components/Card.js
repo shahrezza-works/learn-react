@@ -10,18 +10,16 @@ export default function Card(props) {
     const title = props.title
     const price = props.price
     return (
-        <section>
-            <div className='card'>
-                <img src={require(`../images/${img}`)} alt="card1"/>
-                <div className='card--info'>
-                    <div className='card--info--one'>
-                        <img src={staricon} alt="star" />
-                        <p>{rating} <span className='grey'>({reviewCount}) <span className='round'></span> {country}</span></p>
-                    </div>
-                    <p>{title}</p>
-                    <p><span className='bold'>From ${price}</span> / person</p>
+        <div className='card'>
+            <img src={require(`../images/${img}`)} alt="card1"/>
+            <div className='card--info'>
+                <div className='card--info--one'>
+                    <img src={staricon} alt="star" />
+                    <p>{rating} <span className='grey'>({reviewCount}) <span className='round'></span> {country}</span></p>
                 </div>
+                <p>{title}</p>
+                <p><span className='bold'>From ${price}</span> / person</p>
             </div>
-        </section>
+        </div>
     );
 }
