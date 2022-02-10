@@ -14,8 +14,13 @@ of whether the joke is a pun (`isPun`).
 function App() {
   
   const jokeElement = jokesData.map(joke => {
-    return <Joke key={Math.random()*1000} setup={joke.setup} punchline={joke.punchline}  />
+    return <Joke 
+        key={joke.id} 
+        setup={joke.setup} punchline={joke.punchline}  
+        id={joke.id}
+      />
   })
+
   return (
     <div>
       {jokeElement}
