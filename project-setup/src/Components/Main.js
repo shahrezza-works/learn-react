@@ -1,9 +1,10 @@
 import React from 'react';
 import reactlogo from "../images/react-logo.png"
 
-export default function Main() {
+export default function Main(props) {
+    console.log("new", props.theme)
     return (
-    <div className='container'>
+    <div className={props.theme === "dark" ? 'container' : 'container container--light'}>
         <h1>Fun facts about React</h1>
 
         <ul className='listing'>

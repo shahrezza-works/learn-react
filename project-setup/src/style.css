@@ -6,8 +6,8 @@ body {
     position:relative;
     margin: 0;
     font-family: inter, sans-serif;
-    background-color: #282D35;
     overflow-y: visible;
+    color: #DEEBF8;
 }
 
 .navbar {
@@ -16,6 +16,25 @@ body {
     background-color: #21222A;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-light {
+    background-color: #fff;
+    color: #21222A;
+}
+
+.navbar--right {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.navbar--icon {
+    padding-top: 5px;
+}
+
+.navbar--right > span {
+    font-size: 1.2em;
 }
 
 .nav--brand {
@@ -37,6 +56,11 @@ body {
 .nav--subtitle {
     color: #DEEBF8;
     font-weight: 600;
+    margin-left: 1em;
+}
+
+.navbar-light .nav--subtitle {
+    color: #21222A;
 }
 
 .container {
@@ -45,11 +69,17 @@ body {
     color: #FFFFFF;
     padding: 5rem 2.5rem;
 
+    background-color: #282D35;
     background-image: url("./images/react-logo.png");
     background-repeat: no-repeat;
     background-size: 32rem;
     background-position-x: right;
     background-position-y: 45%;
+}
+
+.container--light {
+    background-color: #ecf6ff;
+    color: #282D35;
 }
 
 .container > h1 {
